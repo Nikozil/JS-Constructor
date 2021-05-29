@@ -6,7 +6,7 @@ import {
   TitleBlock,
 } from './classes/blocks';
 export const model = [
-  new TitleBlock('Конструктор сайтов', {
+  new TitleBlock(1, 'Конструктор сайтов', {
     tag: 'h2',
     styles: {
       background: 'linear-gradient(to right,#ff0099,#493240)',
@@ -15,7 +15,7 @@ export const model = [
       padding: '1.5rem',
     },
   }),
-  new ImageBlock(image, {
+  new ImageBlock(2, image, {
     styles: {
       background: 'linear-gradient(to left,#f2994a,#f2c94c)',
       padding: '2rem 0',
@@ -29,6 +29,7 @@ export const model = [
     alt: 'Picture',
   }),
   new ColumnsBlock(
+    3,
     [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestiae laudantium sed nostrum impedit sapiente facere eligendi ducimus nulla quis, debitis, earum expedita nihil, perferendis cum placeat ipsa necessitatibus at.',
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestiae laudantium sed nostrum impedit sapiente facere eligendi ducimus nulla quis, debitis, earum expedita nihil, perferendis cum placeat ipsa necessitatibus at.',
@@ -43,7 +44,7 @@ export const model = [
       },
     }
   ),
-  new TextBlock('here we go with some text', {
+  new TextBlock(4, 'here we go with some text', {
     styles: {
       background: 'linear-gradient(to left,#f2994a,#f2c94c)',
       padding: '1rem',

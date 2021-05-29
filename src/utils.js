@@ -1,5 +1,5 @@
-export function row(content, styles = '') {
-  return `<div class = "row" style='${styles}'>${content}</div>`;
+export function row(id, content, styles = '') {
+  return `<div id="${id}" class = "row" style='${styles}'>${content}</div>`;
 }
 export function col(content) {
   return `<div class = "col-sm">${content}</div>`;
@@ -24,7 +24,7 @@ export function block(type) {
   <div class="form-group mb-2 ">
     <textarea
       class=" form-control"
-      style="height: 85px"
+      style="height: 50px"
       name="styles"
       placeholder="styles"
     /></textarea>
@@ -33,4 +33,11 @@ export function block(type) {
 </form>
 <hr />
   `;
+}
+
+export function button(type) {
+  return `
+  <button type="button" id="${type}" class="btm btn-primary btn-sm">${type}</button>
+  
+  <hr />`;
 }
